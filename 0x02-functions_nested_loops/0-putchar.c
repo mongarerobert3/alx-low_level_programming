@@ -2,7 +2,7 @@
 
 /* main - prints _putchar, followed by a new line.
  * return - always 0 (success)
- */
+*/
 
 int main(void)
 {
@@ -17,4 +17,3 @@ int main(void)
 
 	return (0);
 }
-
