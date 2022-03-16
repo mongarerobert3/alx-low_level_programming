@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-
-=======
-#include <stdio.h>
 #include "main.h"
 
 /* main - prints _putchar, followed by a new line.
@@ -21,4 +17,4 @@ int main(void)
 
 	return (0);
 }
->>>>>>> c13ba483532600f20fcddaf837522761f67b8ba8
+
