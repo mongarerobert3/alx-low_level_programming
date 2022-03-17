@@ -1,18 +1,31 @@
-#include "main.h"
+#include <stdio.h>
 
 /**
- * _isupper - checks for uppercase character
- * @c: character to be checked
- * Return: 1 if true, 0 if false
+ * main - print 1 to 100,
+ * multiples of 3 with Fizz,
+ * multiples of 5 with Buzz
+ * and multiple of both 3 and 5 with FizzBuzz
+ * Return: 0 on success
  */
 
-int _isupper(int c)
+int main(void)
 {
-	if (c >= 'A' && c <= 'Z')
-		return (1);
+	int i;
 
+	for (i = 1; i <= 100; i++)
+	{
+		if (i % 3 == 0 && i % 5 == 0)
+			printf("FizzBuzz");
+		else if (i % 3 == 0)
+			printf("Fizz");
+		else if (i % 5 == 0)
+			printf("Buzz");
+		else
+			printf("%d", i);
+
+		if (i < 100)
+			printf(" ");
+	}
+	printf("\n");
 	return (0);
 }
-© 2022 GitHub, Inc.
-Terms
-Privacy
