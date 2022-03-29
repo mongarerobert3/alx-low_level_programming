@@ -1,40 +1,20 @@
 #include "main.h"
-#define NULL 0
 
 /**
- * _strstr - locate and return pointer to first occurence of substring
- * @haystack: string to search
- * @needle: target substring to search for
- * Return: pointer to index of string at first occurence of whole substring
+ * print_chessboard - print chessboard given set 2D array
+ * @a: 2D array
  */
 
-char *_strstr(char *haystack, char *needle)
+void print_chessboard(char (*a)[8])
 {
-	int i = 0, j, x;
 
-	if (needle[0] == '\0')
-		return (haystack);
+	int row;
+	int column;
 
-	while (haystack[i] != '\0') /* iterate through haystack */
+	for (row = 0; row < 8; row++)
 	{
-		/* if a byte matches first char of needle */
-		/* interate through needle until match ends */
-		if (haystack[i] == needle[0])
-		{
-			x = i, j = 0;
-			while (needle[j] != '\0')
-			{
-				if (haystack[x] == needle[j])
-					x++, j++;
-				else
-					break;
-			} /* if matched throughout, return haystack */
-			if (needle[j] == '\0')
-			{
-				return (haystack + i);
-			}
-		}
-		i++;
+		for (column = 0; column < 8; column++)
+			_putchar(a[row][column]);
+		_putchar('\n');
 	}
-	return (NULL); /* No match */
 }
