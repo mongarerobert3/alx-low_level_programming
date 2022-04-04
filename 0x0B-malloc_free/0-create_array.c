@@ -8,8 +8,9 @@
  * @size: size of array
  * @c: fill array values with this char
  * return null if size is 0;
+*
 */
-void char *create_array(unsigned int size, char c)
+  char *create_array(unsigned int size, char c)
 {
 	char *arr;
 	int i = 0;
