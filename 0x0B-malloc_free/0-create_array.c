@@ -19,7 +19,7 @@
 		return(NULL);
 	arr = malloc(sizeof(char)* size); /*alocate memory */
 
-	if (*arr == NULL) /*validate memory */
+	if (arr == NULL) /*validate memory */
 		return(NULL);
 
 	while (i < (int)size) /*set array values to cahr c */
