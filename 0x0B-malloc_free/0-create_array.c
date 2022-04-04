@@ -2,15 +2,14 @@
 #include <stdlib.h>
 #include <stdio.h>
 
-/* main - simple_print_buffer - prints buffer in hexa
- * @buffer: the address of memory to print
+/**
  * create_array - create array of chars and initialize with a specific char
  * @size: size of array
  * @c: fill array values with this char
- * return null if size is 0;
-*
+ * Return pointer to array
 */
-  char *create_array(unsigned int size, char c)
+
+char *create_array(unsigned int size, char c)
 {
 	char *arr;
 	int i = 0;
