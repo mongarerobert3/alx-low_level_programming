@@ -11,13 +11,13 @@ char *_strdup(char *str)
 	char *duplicate_str;
 	int i = 0, len = 0;
 
-	if (str == NULL) /* validate str input */
+	if (str == NULL)/* validate str input */
 		return (NULL);
 	while (*(str + i))
 		len ++, i++;
 	len++; /*add null terminator to length */
-	duplicate_str = malloc(sizeof(char) * len); /* allocates memory */
-	if (duplicate_str == NULL) /* validate memory */
+	duplicate_str = malloc(sizeof(char) * len);/* allocates memory */
+	if (duplicate_str == NULL)/* validate memory */
 		return (NULL); 
 	i = 0;
 	while (i < len)
