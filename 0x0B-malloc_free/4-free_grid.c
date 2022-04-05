@@ -9,7 +9,7 @@
  *@height: height of array
  */
 
-void free_grid(int **grid, int hesight)
+void free_grid(int **grid, int height)
 {
 	int i;
 	if (grid == NULL)
