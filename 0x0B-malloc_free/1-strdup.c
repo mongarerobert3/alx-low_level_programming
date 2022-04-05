@@ -23,16 +23,12 @@ char *_strdup(char *str)
 	duplicate_str = malloc(sizeof(char) * len); /* allocates memory */
 
 	if (duplicate_str == NULL) /* validate memory */
-		return (NULL);
-
-
+		return (NULL); 
 	i = 0;
 	while (i < len)
 	{
 		*(duplicate_str + i) = *(str + i);
 		i++;
 	}
-
 	return (duplicate_str);
-
 }
