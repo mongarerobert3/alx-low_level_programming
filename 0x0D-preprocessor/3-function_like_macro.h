@@ -1,10 +1,6 @@
-#ifndef function_like_macro_h
-#define function_like_macro_h
-
-/**
- *main - computes the ABS value of x
- *return: 0
- */
+#ifndef FUNCTION_LIKE_MACRO_H
+#define FUNCTION_LIKE_MACRO_H
 
 #define ABS(x) ((x) < 0 ? -(x) : (x))
-#endif
+
+#endi
