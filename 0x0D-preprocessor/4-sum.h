@@ -1,5 +1,5 @@
-#ifndef sum.h
-#define sum.h
+#ifndef sum_h
+#define sum_h
 
 /**
  *main - computes the sum of x and y
