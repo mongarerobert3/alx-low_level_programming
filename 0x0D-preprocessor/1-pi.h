@@ -1,5 +1,5 @@
-#ifndef 1-pi
-#define 1-pi
+#ifndef pi
+#define pi
 
 /**
  *header file - PI
