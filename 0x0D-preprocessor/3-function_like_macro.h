@@ -1,5 +1,5 @@
 #ifndef function_like_macro
-#define ABS(x) x
+#define function_like_macro
 
 /**
  *main - computes the ABS value of x
