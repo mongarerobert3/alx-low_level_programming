@@ -8,13 +8,16 @@ typedef dog dog_t;
 
 /**
  *struct - structure for the dog
+ *@name: first member
+ *@age:third member
+ @owner: second member
  */
 
 struct dog
 {
 	char *name;
-	char *owner
-	int age
+	char *owner;
+	float age;
 };
 
 void init_dog(struct dog *d, char *name, float age, char *owner);
