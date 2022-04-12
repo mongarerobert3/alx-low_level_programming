@@ -4,7 +4,7 @@
 /**
  * dog_t - typedef for dog structure
  */
-typedef dog dog_t
+typedef dog dog_t;
 
 /**
  *struct - structure for the dog
