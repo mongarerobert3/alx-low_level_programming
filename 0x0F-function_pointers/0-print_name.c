@@ -1,14 +1,14 @@
 #include <stdlib.h>
 
 /**
- *print_name - prints a name
- *@name: name of the person
- *@f: function to execute
- *Return: Nothing
+ * print_name - execute a function given as a parameter
+ * @name: parameter that function ptr needs
+ * @f:function to execute
+ *
  */
- 
+
 void print_name(char *name, void (*f)(char *))
 {
-	if (name != NULL && F!= NULL)
-	f(name);
+	if (name != NULL && f != NULL)
+		f(name);
 }
