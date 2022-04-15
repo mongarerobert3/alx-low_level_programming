@@ -1,4 +1,5 @@
 #include <stddef.h>
+/* defines size_t */
 
 /** 
  *array_iterator - executes a function given as a parameter on each element of an array
