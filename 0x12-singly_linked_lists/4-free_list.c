@@ -1,12 +1,9 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "lists.h"
 
 /**
-* free_list - frees a linked_list
-* @head: a pointer to the head of a linked_list
-* Return: nothing
-*/
+ * free_list - free linked list
+ * @head: linked list
+ */
 
 void free_list(list_t *head)
 {
@@ -17,27 +14,3 @@ void free_list(list_t *head)
 		head = head->next;
 	}
 }
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
-~
--- INSERT --                                                                                                                              0,1           All
-
