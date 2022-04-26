@@ -1,4 +1,4 @@
-nclude <lists.h>
+include <lists.h>
 
 /** 
  *  * listint_t -   finds the number of elements in a linked list
@@ -16,4 +16,4 @@ nclude <lists.h>
  *                                 h = h->h;
  *                                     }
  *                                         return (count);
- *                                         }
+ *                    }
