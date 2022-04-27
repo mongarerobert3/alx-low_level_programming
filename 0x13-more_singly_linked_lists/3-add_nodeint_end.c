@@ -1,39 +1,42 @@
+#include <stdlib.h>
+#include <stdio.h>
 #include "lists.h"
 
 /**
- *listint_t -  adds a new node at the beginning of a listint_t list.
- *@head: head node
- @n: number of nodes
- */
-
- 
-listint_t *add_nodeint(listint_t **head, const int n)
+  * add_nodeint_end - Adds a new node to the end of a linked list
+  * @head: The head of the linked list
+  * @n: The value to add to the end of the linked list
+  *
+  * Return: The address of the new element, or NULL it failed
+  */
+listint_t *add_nodeint_end(listint_t **head, const int n)
 {
-    listint_t *new_node;
-    listint_t *trav -> *next;
+	listint_t *new_list, *temp;
 
-    /* create new node */
-    new node = malloc(sizeof(listint_t));
-    if (new node == NULL)
-        return (NULL);
+	if (head)
+	{
+		new_list = malloc(sizeof(listint_t));
+		if (new_list == NULL)
+			return (NULL);
 
-    new_node ->n = n;
-    new_node -> next = NULL;
+		new_list->n = n;
+		new_list->next = NULL;
 
-    /* If the list is empty */
+		if (*head == NULL)
+		{
+			*head = new_list;
+			return (*head);
+		}
+		else
+		{
+			temp = *head;
+			while (temp->next)
+				temp = temp->next;
 
-    If (*head == NULL)
-    {
-             *head = new_node;
-             return (new_node);
-    }
-       
+			temp->next = new_list;
+			return (temp);
+		}
+	}
 
-
-/* traverse list to the end */
-
-while (trav -> next != NULL)
-    trav = trav -> next;
-
-    trav -> next = new_node;
+	return (NULL);
 }
