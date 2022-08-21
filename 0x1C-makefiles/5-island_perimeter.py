@@ -1,17 +1,17 @@
 #!/usr/bin/python3
-'''
-    island parameter
-'''
+"""
+Island Perimeter
+"""
+
 def island_perimeter(grid):
-    '''
-        grid is a list of list of integers
-
-        Args:
+    """returns the perimeter of the island described in grid
+    Args:
         grid(matrix): input grid
-
-        Desc:perimeter of the grid
-        
-    '''
+    Description:
+        Traverse the land mass, and
+        for the lake's nearest neighbor
+        then return the total length
+    """
     y = 0
     x = 0
     
